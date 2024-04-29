@@ -56,7 +56,7 @@ app.get('/', (req, res) => {
   res.sendFile(imagePath);
 });
 app.listen(port, () => {
-  console.log(`🔗 Listening to GlaceYT : http://localhost:${port}`);
+  console.log(`🔗 Listening to Jyosim : http://localhost:${port}`);
 });
 printWatermark();
 
@@ -143,8 +143,8 @@ client.once('ready', () => {
   setTimeout(() => {
     console.log('\x1b[32m%s\x1b[0m', `|    🎯 Activity sucessfully set!`);
     client.user.setPresence({
-      activities: [{ name: `Update Out V@1.5`, type: ActivityType.Watching }],
-      status: 'idle',
+      activities: [{ name: `Welcome to LMNTRIX!`, type: ActivityType.Watching }],
+      status: 'do not disturb',
     });
   }, 2000); 
 });
